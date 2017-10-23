@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
-    "bootstrap": "^3.3.7",
     "bootstrap-vue": "^1.0.0-beta.9",
+    "bootstrap": "4.0.0-beta.2",
     "font-awesome": "^4.7.0",
     "vue": "^2.5.2",
     "vuejs-image-placeholder": "^0.1.1"

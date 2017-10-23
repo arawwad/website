@@ -2,12 +2,21 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import BootstrapVue from 'bootstrap-vue'
+import {ScrollPosStyler} from './utilities/scrollPosStyler'
 
+Vue.use(BootstrapVue)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   template: '<App/>',
-  components: { App }
+  components: { App },
+  created () {
+    ScrollPosStyler.init({
+      spsClass: 'navbar',
+      classBelow: 'navbar--blw'
+    })
+  }
 })
